@@ -1,0 +1,202 @@
+db.usuarios.insertMany([
+    {
+        "nombre": "Jimmy Alexander Lomabana",
+        "edad": 30,
+        "correo": "jimmy123@gmail.com",
+        "telefono": 31232253466
+    },
+    {
+        "nombre": "Juan Camilo Castro",
+        "edad": 35,
+        "correo": "juan123@gmail.com",
+        "telefono": 3126371235 
+    },
+    {
+        "nombre": "Valentina Lomabana Castro",
+        "edad": 17,
+        "correo": "valentina123@gmail.com",
+        "telefono": 31563474823 
+    },
+    {
+        "nombre": "Alejandra Castaño Vargas",
+        "edad": 20,
+        "correo": "aleja123@gmail.com",
+        "telefono": 31581637234
+    },
+    {
+        "nombre": "Andres Felipe Rivera",
+        "edad": 12,
+        "correo": "felipe123@gmail.com",
+        "telefono": 31238217343
+    }
+]
+)
+
+db.meterias.insertMany([
+    {
+        "nombre de la materia": "Programacion",
+        "Duracion": "6 meses"
+    },
+    {
+        "nombre de la materia": "Fisica",
+        "Duracion": "5 meses"
+    },
+    {
+        "nombre de la materia": "Emprendimiento",
+        "Duracion": "4 meses"
+    },
+    {
+        "nombre de la materia": "Bases de datos",
+        "Duracion": "6 meses"
+    },
+    {
+        "nombre de la materia": "Proyecto",
+        "Duracion": "4 meses"
+    }
+])
+
+db.notas.insertMany([
+    {
+        "materia": "Proyecto",
+        "nota": 3.0,
+        "instructor": "Rocio del Carmen"
+    },
+    {
+        "materia": "Fisica",
+        "nota": 3.5,
+        "instructor": "Marly Johana"
+    },
+    {
+        "materia": "Programacion",
+        "nota": 4.0,
+        "instructor": "Hector David Toledo"
+    },
+    {
+        "materia": "Ingles",
+        "nota": 3.0,
+        "instructor": "Andres Felipe Osorio"
+    },
+    {
+        "materia": "Bases de datos",
+        "nota": 4.0,
+        "instructor": "Jimmy Alexander Lomabana"
+    }
+])
+
+Consultas
+
+db.notas.find(
+    {
+        "nota": 3.0
+    }
+)
+db.notas.find(
+    {
+        "nota": 4.0
+    }
+)
+db.meterias.find(
+    {
+        "nombre de la materia": "Fisica"
+    }
+)
+db.usuarios.find(
+    {
+        "edad": 17
+    }
+)
+db.meterias.find(
+    {
+        "Duracion": "6 meses"
+    }
+)
+
+Actulizar datos
+
+db.usuarios.updateOne(
+    {
+        "nombre": "Valentina Lomabana Castro"
+    },
+    {
+        $set:
+       {
+        "nombre": "Karol Andrea"
+       } 
+    }
+    
+    )
+
+db.usuarios.updateOne(
+    {
+        "edad": 17
+    },
+    {
+        $set:
+       {
+        "edad": 19
+       } 
+    }
+    
+    )
+
+db.meterias.updateOne(
+    {
+        "nombre de la materia": "Fisica"
+    },
+    {
+        $set:
+       {
+        "nombre de la materia": "Quimica"
+       } 
+    }
+    
+    )
+
+db.meterias.updateOne(
+    {
+        "Duracion": "6 meses"
+    },
+    {
+        $set:
+       {
+        "Duracion": "1 Año"
+       } 
+    }
+    
+    )
+
+db.notas.updateOne(
+    {
+        "nota": 3.0
+    },
+    {
+        $set:
+       {
+        "nota": 3.2
+       } 
+    }
+    
+    )
+
+
+Eliminar Documentos
+
+db.notas.deleteOne({
+        "nota": 3.2
+    }
+)
+
+db.notas.deleteOne({
+        "nota": 4.0
+    }
+)
+
+db.usuarios.deleteOne({
+        "nombre": "Jimmy Alexander Lomabana"
+    }
+)
+
+db.meterias.deleteOne({
+        "nombre de la materia": "Quimica"
+    }
+)

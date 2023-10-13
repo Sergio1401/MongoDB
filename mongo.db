@@ -1,0 +1,116 @@
+db.clientes.insertMany([
+{
+        "nombre": "Maria Paula",
+        "apellido": "Embus Polanco",
+        "direccion": "cra 12",
+        "telefono": 312765372,
+        "correo": "maria123@gmail.com"
+},
+{
+        "nombre": "Tatiana",
+        "apellido": "Angarita Valero",
+        "direccion": "cra 12",
+        "telefono": 312786235,
+        "correo": "tatiana123@gmail.com"
+},
+{
+        "nombre": "Ivvone Yulieth",
+        "apellido": "Trujillo",
+        "direccion": "calle 12",
+        "telefono": 321541165,
+        "correo": "ivvone123@gmail.com"
+},
+{
+        "nombre": "Jonathan",
+        "apellido": "Fierro Bermeo",
+        "direccion": "calle 2",
+        "telefono": 314564651,
+        "correo": "yonatan123@gmail.com"
+},
+{
+        "nombre": "Edier Stiven",
+        "apellido": "Chavarro Sotelo",
+        "direccion": "calle 2",
+        "telefono": 311546548,
+        "correo": "edier123@gmail.com"
+},
+{
+        "nombre": "Maria Paula",
+        "apellido": "Rojas Torres",
+        "direccion": "calle 2",
+        "telefono": 312456468,
+        "correo": "mariap123@gmail.com"
+}
+]
+)
+
+
+db.ventas.insertMany([
+    {
+        "fecha": "01/09/2023",
+        "total-venta": "$20.000"
+    },
+    {
+        "fecha": "02/09/2023",
+        "total-venta": "$30.000"
+    },
+    {
+        "fecha": "03/09/2023",
+        "total-venta": "$40.000"
+    },
+    {
+        "fecha": "04/09/2023",
+        "total-venta": "$50.000"
+    },
+    {
+        "fecha": "05/09/2023",
+        "total-venta": "$60.000"
+    },
+    {
+        "fecha": "06/09/2023",
+        "total-venta": "$70.000"
+    },
+    {
+        "fecha": "07/09/2023",
+        "total-venta": "$80.000"
+    }
+]
+)
+
+db.productos.insertMany([
+    {
+        "nombre": "Llanta",
+        "descripcion": "Michellin",
+        "precio": "$20.000"
+    },
+    {
+        "nombre": "Tapa Lateral",
+        "descripcion": "Crypton 115",
+        "precio": "$30.000"
+    },
+    {
+        "nombre": "Tren de Arrastre",
+        "descripcion": "Casarella",
+        "precio": "$40.000"
+    },
+    {
+        "nombre": "Aceite",
+        "descripcion": "Motul 100% sintetico",
+        "precio": "$50.000"
+    },
+    {
+        "nombre": "Farola Original",
+        "descripcion": "Ns 200",
+        "precio": "$60.000"
+    },
+    {
+        "nombre": "Tanque ax 100",
+        "descripcion": "Azul",
+        "precio": "$70.000"
+    },
+    {
+        "nombre": "Llanta",
+        "descripcion": "MRF",
+        "precio": "$80.000"
+    }
+])

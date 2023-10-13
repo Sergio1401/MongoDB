@@ -1,0 +1,38 @@
+.Card {
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #3333;
+    background-color: rgb(102, 99, 143);
+    padding: 10px;
+    border: 2px solid;
+    text-align: center;
+    gap: 10;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+
+h2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
